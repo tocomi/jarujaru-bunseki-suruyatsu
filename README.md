@@ -10,5 +10,6 @@ Bootstrap a developer-friendly NextJS app configured with:
 - Material-UI
 - Prettier
 - react-testing-library
+- Storybook
 - styled-components
 - Typescript
