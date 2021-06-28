@@ -7,6 +7,7 @@ Bootstrap a developer-friendly NextJS app configured with:
 - ESLint
 - husky
 - Jest
+- Material-UI
 - Prettier
 - react-testing-library
 - styled-components
