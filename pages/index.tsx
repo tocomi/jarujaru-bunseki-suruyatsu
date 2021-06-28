@@ -1,56 +1,55 @@
 import Head from 'next/head'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+`
+
+const Main = styled.main`
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 0;
+`
+
+const Title = styled.h1`
+  font-size: 4rem;
+  line-height: 1.15;
+  margin: 0;
+  text-align: center;
+`
+
+const Footer = styled.footer`
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+`
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="container">
+    <Container>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">Welcome to Next.js!</h1>
-      </main>
+      <Main>
+        <Title className="title">Welcome to Next.js!</Title>
+      </Main>
 
-      <footer>
+      <Footer>
         <span>Powered by tocomi</span>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          text-align: center;
-        }
-      `}</style>
+      </Footer>
 
       <style jsx global>{`
         html,
@@ -65,7 +64,7 @@ export const Home = (): JSX.Element => {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Container>
   )
 }
 
